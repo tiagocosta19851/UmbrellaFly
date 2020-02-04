@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Tipsterfly</title>
+
+    <link rel="stylesheet" href="static/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/site.css" />
+    <link href="static/css/all.min.css" rel="stylesheet">
+    <link href="static/css/swiper.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,500' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:900,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=fallback" rel="stylesheet">
+    <!-- end: Fonts -->
+
+</head>
+
+<body>
+    <div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+
+        <button class="navbar-toggler  navbar-left float-left" type="button" data-toggle="canvas" data-target="#bs-canvas-left" aria-expanded="false" aria-controls="bs-canvas-left">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">Tipster<span>fly</span></a>
+
+        <!-- three dot menu -->
+        <div class="dropdown  d-md-none">
+            <!-- three dots -->
+            <ul class="dropbtn icons btn-right showLeft">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <!-- menu -->
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Add to Portfolio</a>
+                <a href="#about">Edit Portfolio</a> 
+            </div>
+        </div>
+
+
+    </nav>
+
+    <div id="bs-canvas-left" class="bs-canvas bs-canvas-anim bs-canvas-left position-fixed bg-light h-100">
+        <header class="bs-canvas-header p-3 overflow-auto">
+            <div id="bs-canvas-header-title">
+                Tiago Costa
+            </div>
+            <button type="button" class="bs-canvas-close float-right close" aria-label="Close"><span aria-hidden="true" class="text-dark">&times;</span></button>
+
+        </header>
+        <div id="bs-canvas-header-wallet" class="p-3">
+            <div id="bs-canvas-header-portfolio-value">
+                <span class="wallet-name">Portfolio</span>
+                <span class="wallet-value float-right">£100.00</span>
+            </div>
+            <div id="bs-canvas-header-cash-value">
+                <span class="wallet-name">Available Balance</span>
+                <span class="wallet-value float-right">£100.00</span>
+            </div>
+        </div>
+
+        <ul id="bs-canvas-mobile-menu" class="list-group flex-column">
+            <li class="list-group-item active"><a href="#"><i class="fas fa-chart-pie"></i>Portfolio</a></li>
+            <li class="list-group-item"><a href="#"><i class="fas fa-suitcase"></i>My Tips</a></li>
+            <li class="list-group-item"><a href="#"><i class="fas fa-robot"></i>Automated Bets</a></li>
+            <li class="list-group-item"><a href="#"><i class="far fa-futbol"></i>Sportbook</a></li>
+            <li class="list-group-item"><a href="#"><i class="far fa-lightbulb"></i>Discover</a></li>
+            <li class="list-group-item"><a href="#"><i class="fas fa-star"></i>Watch List</a></li>
+            <li class="list-group-item"><a href="#"><i class="far fa-money-bill-alt"></i>Funding</a></li>
+            <li class="list-group-item"><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+        </ul>
+    </div>
+
+    <main role="main" class="container">
+        <div class="row">
+            <div id="container-menu-left" class="col-lg-2 d-none d-lg-block d-xl-block">
+                <div id="desktop-menu-left" class="">
+                    <ul id="bs-canvas-desktop-menu" class="list-group flex-column">
+                        <li class="list-group-item active"><a href="#"><i class="fas fa-chart-pie"></i>Portfolio</a></li>
+                        <li class="list-group-item"><a href="#"><i class="fas fa-suitcase"></i>My Tips</a></li>
+                        <li class="list-group-item"><a href="#"><i class="fas fa-robot"></i>Automated Bets</a></li>
+
+                        <li class="list-group-item"><a href="#"><i class="far fa-futbol"></i>Sportbook</a></li>
+                        <li class="list-group-item"><a href="#"><i class="far fa-lightbulb"></i>Discover</a></li>
+                        <li class="list-group-item"><a href="#"><i class="fas fa-star"></i>Watch List</a></li>
+                        <li class="list-group-item"><a href="#"><i class="far fa-money-bill-alt"></i>Funding</a></li>
+                        <li class="list-group-item"><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="container-main-area" class="col-lg-10 col-sm-12">
+
+                <div id="main-area" class="">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active">Portfolio</li>
+                                    <!--
+                              <li class="breadcrumb-item"><a href="#">Library</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Data</li>
+                              -->
+                                </ol>
+                            </nav>
+                        </div>
+
+                        <!-- Swiper --> 
+                        <div class="col-12 d-md-none">
+
+                            <div class="swiper-container">
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div id="container-chart-donut-mobile" class="col-12 col-md-5">
+                                            <div class="chart-wrapper-mobile">
+                                                <canvas id="myChart-mobile" width="350" height="350"></canvas>
+                                                <div id="chartjs-tooltip-mobile">
+                                                    <div>
+                                                        <p>100%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center d-none d-md-block" id="container-portfolio-btns">
+                                                <div class="btn btn-primary col-md-3 col-3" id="btn-portfolio-add">Add</div>
+                                                <div class="btn btn-primary col-md-3 col-3" id="btn-portfolio-edit">Edit</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div id="container-chart-line-mobile" class="col-12 col-md-7">
+                                            <canvas id="myChartLine-mobile" height="350"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="container-chart-donut-desktop" class="d-none d-md-block col-md-5 ">
+                            <div class="chart-wrapper-desktop">
+                                <canvas id="myChart" width="250" height="250"></canvas>
+                                <div id="chartjs-tooltip">
+                                    <div>
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center" id="container-portfolio-btns">
+                                <div class="btn btn-primary col-md-3 col-3" id="btn-portfolio-add">Add</div>
+                                <div class="btn btn-primary col-md-3 col-3" id="btn-portfolio-edit">Edit</div>
+                            </div>
+                        </div>
+
+                        <div id="container-chart-line-desktop" class="d-none d-md-block col-md-7">
+                            <canvas id="myChartLine" height="200"></canvas>
+                        </div>
+
+                        <div id="container-table-slices" class="col-12 col-md-7 offset-md-5">
+                            <div class="col-12 col-md12" id="title-slices">
+                                <h4>Slices</h4></div>
+
+                            <table class="table" id="table-slices">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Value</th>
+                                        <th scope="col">Gain (Return)</th>
+                                        <th scope="col">Target</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" style="border-left: 4px solid #bbb">Football</th>
+                                        <td>395£</td>
+                                        <td>
+                                            <div>+£45.65</div>
+                                            <div>+3.45%</div>
+                                        </td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Hockey</th>
+                                        <td>395£</td>
+                                        <td>
+                                            <div>+£45.65</div>
+                                            <div>+3.45%</div>
+                                        </td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Basketball</th>
+                                        <td>395£</td>
+                                        <td>
+                                            <div>+£45.65</div>
+                                            <div>+3.45%</div>
+                                        </td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Horses</th>
+                                        <td>395£</td>
+                                        <td>
+                                            <div>+£45.65</div>
+                                            <div>+3.45%</div>
+                                        </td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Football</th>
+                                        <td>395£</td>
+                                        <td>
+                                            <div>+£45.65</div>
+                                            <div>+3.45%</div>
+                                        </td>
+                                        <td>20%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="static/lib/jquery/dist/jquery.min.js"></script>
+    <script src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js" type="text/javascript"></script>
+    <script src="static/lib/swiper/swiper.min.js"></script>
+    <script src="static/js/site.js"></script>
+
+</body>
+
+</html>
